@@ -1,5 +1,6 @@
 package by.instaclone.server.repository;
 
+
 import by.instaclone.server.entity.Post;
 import by.instaclone.server.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;

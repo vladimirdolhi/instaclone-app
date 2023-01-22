@@ -1,8 +1,10 @@
 package by.instaclone.server.entity;
 
-import jakarta.persistence.*;
+
 import lombok.Data;
 import net.minidev.json.annotate.JsonIgnore;
+
+import javax.persistence.*;
 
 @Data
 @Entity

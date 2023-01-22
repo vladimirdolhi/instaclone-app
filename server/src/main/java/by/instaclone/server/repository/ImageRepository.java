@@ -1,5 +1,6 @@
 package by.instaclone.server.repository;
 
+
 import by.instaclone.server.entity.ImageModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
