@@ -24,10 +24,10 @@ public class Comment {
     private String message;
 
     @Column(updatable = false)
-    private LocalDateTime createdData;
+    private LocalDateTime createdDate;
 
     @PrePersist
     void onCreate(){
-        this.createdData = LocalDateTime.now();
+        this.createdDate = LocalDateTime.now();
     }
 }

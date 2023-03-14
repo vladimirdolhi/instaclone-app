@@ -1,5 +1,6 @@
 package by.instaclone.server.payload.request;
 
+import by.instaclone.server.annotations.PasswordMatches;
 import by.instaclone.server.annotations.ValidEmail;
 import lombok.Data;
 
@@ -9,8 +10,9 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
 @Data
+@PasswordMatches
 public class SignupRequest {
-    @Email(message = "It's should be emil format")
+    @Email(message = "It's should be email format")
     @NotBlank(message = "Email is required")
     @ValidEmail
     private String email;

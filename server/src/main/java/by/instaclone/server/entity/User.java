@@ -39,7 +39,7 @@ public class User implements UserDetails {
 
     @JsonFormat(pattern = "yyyy-mm-dd HH-mm-ss")
     @Column(updatable = false)
-    private LocalDateTime createdData;
+    private LocalDateTime createdDate;
 
     public User() {
     }
@@ -62,7 +62,7 @@ public class User implements UserDetails {
     @PrePersist
     void onCreate(){
 
-        this.createdData = LocalDateTime.now();
+        this.createdDate = LocalDateTime.now();
     }
 
     /**

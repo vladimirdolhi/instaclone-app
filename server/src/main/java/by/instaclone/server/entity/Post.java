@@ -31,11 +31,11 @@ public class Post {
     private List<Comment> comments = new ArrayList<>();
 
     @Column(updatable = false)
-    private LocalDateTime createdData;
+    private LocalDateTime createdDate;
 
     @PrePersist
     void onCreate(){
-        this.createdData = LocalDateTime.now();
+        this.createdDate = LocalDateTime.now();
     }
 
 }
