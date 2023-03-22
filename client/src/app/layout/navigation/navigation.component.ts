@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {TokenStorageService} from "../../service/token-storage.service";
 import {UserService} from "../../service/user.service";
 import {User} from "../../models/User";
@@ -9,7 +9,7 @@ import {Router} from "@angular/router";
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.css']
 })
-export class NavigationComponent {
+export class NavigationComponent implements OnInit{
   isLoggedIn = false;
   isDataLoaded = false;
   user: User;

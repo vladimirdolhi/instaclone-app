@@ -5,10 +5,8 @@ import {Observable} from 'rxjs';
 
 const TOKEN_HEADER_KEY = 'Authorization';
 
-@Injectable({
-  providedIn: 'root'
-})
-export class AuthInterceptorService {
+@Injectable()
+export class AuthInterceptorService implements HttpInterceptor{
 
   constructor(private tokenService: TokenStorageService) {
   }

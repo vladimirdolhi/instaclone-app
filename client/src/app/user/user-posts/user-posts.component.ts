@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Post} from "../../models/Post";
 import {PostService} from "../../service/post.service";
 import {ImageUploadService} from "../../service/image-upload.service";
@@ -10,7 +10,7 @@ import {NotificationService} from "../../service/notification.service";
   templateUrl: './user-posts.component.html',
   styleUrls: ['./user-posts.component.css']
 })
-export class UserPostsComponent {
+export class UserPostsComponent implements OnInit{
   isUserPostsLoaded = false;
   posts: Post [];
 

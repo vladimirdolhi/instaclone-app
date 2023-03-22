@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {User} from "../../models/User";
 import {TokenStorageService} from "../../service/token-storage.service";
 import {PostService} from "../../service/post.service";
@@ -13,7 +13,7 @@ import {EditUserComponent} from "../edit-user/edit-user.component";
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css']
 })
-export class ProfileComponent {
+export class ProfileComponent implements OnInit{
   isUserDataLoaded = false;
   user: User;
   selectedFile: File;

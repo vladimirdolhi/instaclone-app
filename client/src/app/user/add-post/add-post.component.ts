@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {Post} from "../../models/Post";
 import {PostService} from "../../service/post.service";
@@ -11,7 +11,7 @@ import {Router} from "@angular/router";
   templateUrl: './add-post.component.html',
   styleUrls: ['./add-post.component.css']
 })
-export class AddPostComponent {
+export class AddPostComponent implements OnInit{
   postForm: FormGroup;
   selectedFile: File;
   isPostCreated = false;
